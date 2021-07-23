@@ -1,13 +1,35 @@
 # READ ME
-This organization is created for IES Documentation team. As of the end of July 2021, only one repo is available: pilot1. Please do not upload sensitive data, documents to this repository, as it's a public one and it's for pilot projects and tests only.
+This repository is created to save style packages for PDF output and webhelp output. These styles are created through Oxygen Style Basket: https://styles.oxygenxml.com.  Packages are saved in https://github.com/iesdocs/styles/tree/main/styles_pdf_webhelp.
 
-## Cybersecurity
-To protect sensitive customer and NI information from digital attacks or information misuse, please avoid uploading sensitive information to public repositories like this. 
+## How to Customize Style with Oxygen 
+1. Go to https://styles.oxygenxml.com. 
+2. Configure each attribute.
+3. Click **See Results** to preview the effect in PDF or Webhelp.
+4. Download the style package: **Download** > **Publishing Template**.
 
-## Folder
-You can create folders as needed. Some folders, for example, *Tpc*, was created for integration test on markdown and lightweight DITA. 
+## How to Apply the Style to Oxygen 
+In Oxygen XML Editor, you need to select a transformation scenario before publishing a book in a certain format. The most frequently used format in IES DOCS is PDF. So the following instruction takes customizing PDF transformation as an example.
+
+**Procedure**:
+1. Open oXygen XML Editor v23.1.
+2. Select **DITA Maps** > **Configure Transformation Scenarios**. ![image](https://user-images.githubusercontent.com/49274541/126759829-74eb1fbe-4a00-4f5b-9619-a230025de927.png)
+3. Select **DITA Map PDF - based on HTML5 & CSS**. ![image](https://user-images.githubusercontent.com/49274541/126759535-afa97ada-e77a-4945-8879-c6965389f3c7.png)
+4. Click **Edit**.
+5. Click **Yes** to duplicate and edit the scenario. ![image](https://user-images.githubusercontent.com/49274541/126760029-6755cba7-83d8-4983-aa52-2a75f9c8b7c7.png)
+6. Specify the name of this custom transformation scenario in the **Edit Scenario** window. ![image](https://user-images.githubusercontent.com/49274541/126760265-efe8ccec-ada7-4091-a41d-4efc2826b62a.png)
+7. Click **Choose Custom Publishing Template**.![image](https://user-images.githubusercontent.com/49274541/126760420-2f2fc6c6-94c8-4d2d-8da4-aee5781eb20f.png)
+8. Browse for a publishing template from local folder. In this example, try [darkgreen_styles.zip](https://github.com/iesdocs/styles/files/6867688/darkgreen_styles.zip) or navigate to https://github.com/iesdocs/styles/blob/main/styles_pdf_webhelp/darkgreen_styles.zip.
+9. Click **OK**.![image](https://user-images.githubusercontent.com/49274541/126760747-36142c30-b581-42ca-beed-1613a61f20f8.png)
+10. Click **OK** to save the settings.
+
+## How to Generate PDF Using a Custom Transformation Scenario
+![image](https://user-images.githubusercontent.com/49274541/126761226-9f522bc0-dfba-41cc-9ce3-6caca82c06ff.png)
 
 ## Tools
+
+### Style Design Tools
+https://styles.oxygenxml.com 
+
 ### Authoring Tools
 - If you are authoring in DITA, try oXygen XML editor. The latest version is 23.1. https://www.oxygenxml.com/doc/versions/23.1/ug-editor/index.html 
 - If you are working in Markdown, you have various options, for example, notepad, visual studio code, atom, notepad++, github desktop, gitkraken, oxygen, or web editor embedded in Github, that is, here.
@@ -33,6 +55,6 @@ Table creation and maintenance could be annoying even after months of experience
 
 ## Contact
 galano.han@ni.com or galano.han@outlook.com
-111
+
 
 
