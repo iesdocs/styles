@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><publishing-template>
+<name>Custom Template</name>
+<webhelp>
+<preview-image file="preview/Thumbnail_WH_OSB.png"/>
+<resources>
+<css file="styles.css"/>
+<fileset>
+<include name="resources/**/*"/>
+</fileset>
+</resources>
+<parameters>
+<parameter name="args.css.param.numbering" value="deep-chapter-scope-no-page-reset"/>
+<parameter name="webhelp.show.main.page.toc" value="yes"/>
+<parameter name="webhelp.show.main.page.tiles" value="no"/>
+</parameters>
+</webhelp>
+<pdf>
+<preview-image file="preview/Thumbnail_PDF_OSB.png"/>
+<resources>
+<css file="styles.css"/>
+</resources>
+<parameters>
+<parameter name="args.css.param.numbering" value="deep-chapter-scope-no-page-reset"/>
+<parameter name="webhelp.show.main.page.toc" value="yes"/>
+<parameter name="webhelp.show.main.page.tiles" value="no"/>
+</parameters>
+</pdf>
+</publishing-template>
