@@ -320,6 +320,24 @@ body {
 .topictitle6 {
   font-size: 11pt;
 }
+
+figcaption {
+	display:block;
+	text-align: left;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 9.5pt;	
+}
+/*figure title font size */
+
+
+table > caption {
+	text-align: left;
+	font-family: 'Oxygen', sans-serif;
+	font-size: 9.5pt;
+}
+/*table title font size */
+
+
 /*content-font-size-9-and-half*/
 body {
   font-size: 9.5pt;
