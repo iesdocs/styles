@@ -18,12 +18,26 @@ In Oxygen XML Editor, you need to select a transformation scenario before publis
 5. Click **Yes** to duplicate and edit the scenario. ![image](https://user-images.githubusercontent.com/49274541/126760029-6755cba7-83d8-4983-aa52-2a75f9c8b7c7.png)
 6. Specify the name of this custom transformation scenario in the **Edit Scenario** window. ![image](https://user-images.githubusercontent.com/49274541/126760265-efe8ccec-ada7-4091-a41d-4efc2826b62a.png)
 7. Click **Choose Custom Publishing Template**.![image](https://user-images.githubusercontent.com/49274541/126760420-2f2fc6c6-94c8-4d2d-8da4-aee5781eb20f.png)
-8. Browse for a publishing template from local folder. In this example, try [darkgreen_styles.zip](https://github.com/iesdocs/styles/files/6867688/darkgreen_styles.zip) or navigate to https://github.com/iesdocs/styles/blob/main/styles_pdf_webhelp/darkgreen_styles.zip.
+8. Browse for a publishing template from local folder. https://github.com/iesdocs/styles/tree/main/styles_pdf_webhelp 
 9. Click **OK**.![image](https://user-images.githubusercontent.com/49274541/126760747-36142c30-b581-42ca-beed-1613a61f20f8.png)
 10. Click **OK** to save the settings.
 
 ## How to Generate PDF Using a Custom Transformation Scenario
 ![image](https://user-images.githubusercontent.com/49274541/126761226-9f522bc0-dfba-41cc-9ce3-6caca82c06ff.png)
+
+## Color
+
+### Forest Green
+Red=4, Green=65, Blue=35.
+HEX=044123.
+
+### Green
+Red=3, Green=181, Blue=133.
+HEX=03B585.
+
+### Black
+Red=13,Green=13,Blue=13.
+HEX=0D0D0D.
 
 ## Tools
 
