@@ -28,16 +28,20 @@ In Oxygen XML Editor, you need to select a transformation scenario before publis
 ## Color
 
 ### Forest Green
-Red=4, Green=65, Blue=35.
+rgb(4,65,35)
 HEX=044123.
 
 ### Green
-Red=3, Green=181, Blue=133.
+rgb(3,181,133)
 HEX=03B585.
 
 ### Black
-Red=13,Green=13,Blue=13.
+rgb(13,13,13)
 HEX=0D0D0D.
+
+### BlackgroundAccentColor/TableStripe Color
+rgb(230,255,250)
+HEX=E6FFFA
 
 ## Tools
 
