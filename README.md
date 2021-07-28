@@ -18,7 +18,7 @@ In Oxygen XML Editor, you need to select a transformation scenario before publis
 5. Click **Yes** to duplicate and edit the scenario. ![image](https://user-images.githubusercontent.com/49274541/126760029-6755cba7-83d8-4983-aa52-2a75f9c8b7c7.png)
 6. Specify the name of this custom transformation scenario in the **Edit Scenario** window. ![image](https://user-images.githubusercontent.com/49274541/126760265-efe8ccec-ada7-4091-a41d-4efc2826b62a.png)
 7. Click **Choose Custom Publishing Template**.![image](https://user-images.githubusercontent.com/49274541/126760420-2f2fc6c6-94c8-4d2d-8da4-aee5781eb20f.png)
-8. Browse for a publishing template from local folder. https://github.com/iesdocs/styles/tree/main/styles_pdf_webhelp 
+8. Browse for a publishing template from local folder. 
 9. Click **OK**.![image](https://user-images.githubusercontent.com/49274541/126760747-36142c30-b581-42ca-beed-1613a61f20f8.png)
 10. Click **OK** to save the settings.
 
@@ -54,6 +54,15 @@ https://styles.oxygenxml.com
 - In the current test, I use Gitkraken. See https://nio365.sharepoint.com/:p:/r/sites/IESDocumentation/Shared%20Documents/Dita%20Migration/_Git%20it%20done.pptx?d=w394f1262f2e245bbae27ca9f7a6361f0&csf=1&web=1&e=qC2mEy 
 - Github Desktop is also convenient to use as a tool but it lacks support to AzDo. 
 - oXygen 23.1 supports Git Staging too.
+
+### Background Generator
+- https://bggenerator.com 
+- http://bg.siteorigin.com 
+- https://www.adobe.com/express/create/background
+
+### RGB2HEX Color Convertor
+- https://www.rgbtohex.net
+- https://www.rapidtables.com/convert/color/rgb-to-hex.html 
 
 ## Installation and Configuration
 See https://nio365.sharepoint.com/:p:/r/sites/IESDocumentation/Shared%20Documents/Dita%20Migration/_Git%20it%20done.pptx?d=w394f1262f2e245bbae27ca9f7a6361f0&csf=1&web=1&e=qC2mEy 
