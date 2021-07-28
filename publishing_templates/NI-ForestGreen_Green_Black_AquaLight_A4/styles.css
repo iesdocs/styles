@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:regular,bold&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,italic,bold&display=swap');
+/*#
+@colors&{"titlesAccentColor":"#0d0d0d","labelsAccentColor":"#03b585","linksAccentColor":"#044123","backgroundAccentColor":"#e6fffa","isDefault":true}&colors@
+@info@STYLES BASKET SELECTIONS METADATA@info@
+@name&styles_basket&name@
+@aspects&wh-tree,theme-fonts-oxygen-source-sans-pro,logo-favicon-selector,pdf-cover-title-size-small,right-pages-header-all-corner-page-number,left-pages-header-all-corner-page-number,pdf-index-groups-colors-labels-colors,pdf-index-groups-styles-bold-underline,pdf-index-groups-alignment-inline,wh-tiles-themes-titles-and-link,wh-tree-themes-titles-labels-colors,wh-breadcrumb-colors-title-and-links-bg,wh-breadcrumb-separator-arrow,wh-on-this-page-dashed,wh-publication-toc-dashed,wh-index-terms-colors-titles-labels-colors-with-bg,wh-index-terms-styles-titles-bold,wh-menu-page-colors-titles-color-no-bg,content-font-size-9-and-half,between-elements-small,between-lines-medium,footnotes-style-square-brackets-default-marker,footnotes-links-accent-colors,footnotes-separator-solid,footnotes-separator-titles-accent-color,code-fonts-consolas,code-block-theme-colors-github,unordered-list-bullet-disc,unordered-list-bullet-size-small,ordered-list-counter-color-labels,hazard-content-border,notes-style-box,header-style-bold,accent-colors-selector,unordered-list-bullet-color-labels,table-style-classic-grid,table-colors-striped-reverse,notes-layout-two-lines,pdf-cover-title-colors-labels,page-margin-0-25,page-size-a4,title-font-size-small,header-colors-labels,titles-color-labels,pdf-cover-selector&aspects@
+@info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICIATION CAN CAUSE UPLOADING ERRORS@info@
+#*/
+@media print {
+  @page front-page {
+    background-image: url("resources/cover.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
+/*accent-colors-selector*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  color: #0d0d0d;
+}
+*[class~='topic/shortdesc']:before {
+  color: #03b585;
+}
+*[class~='topic/xref'],
+*[class~='topic/link'] {
+  color: #044123;
+  text-decoration: none;
+}
+.related-links a,
+.related-links a:visited {
+  color: #044123;
+  text-decoration: none;
+}
+a,
+a:hover,
+a:visited {
+  color: #044123;
+  text-decoration: none;
+}
+*[class~='topic/table'] *[class~='topic/thead'] {
+  background-color: #e6fffa;
+}
+/*theme-fonts-oxygen-source-sans-pro*/
+@page {
+  font-family: 'Oxygen', sans-serif;
+}
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~='front-page/front-page-title'],
+*[class~="toc/title"],
+*[class~="map/topicref"],
+*[class~='topic/title'],
+*[class~='topic/thead'],
+*[class~="placeholder/figurelist"],
+*[class~="placeholder/tablelist"],
+*[class~="index/groups"]::before,
+*[class~="index/group"] > *[class~="index/label"],
+.wh_publication_title,
+.wh_top_menu,
+.wh_tile_title .topicref,
+.wh_main_page_toc_entry .topicref,
+.wh_index_terms span.wh_first_letter,
+.wh-letters li a {
+  font-family: 'Oxygen', sans-serif;
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/*pdf-cover-selector*/
+/*pdf-cover-title-size-small*/
+*[class~="front-page/front-page-title"] > *[class~="topic/title"] {
+  font-size: 1.6em;
+}
+/*pdf-cover-title-colors-labels*/
+*[class~="front-page/front-page-title"] > *[class~="topic/title"] {
+  color: #03b585;
+  background-color: transparent;
+}
+/*left-pages-header-all-corner-page-number*/
+@page :left {
+  @top-left-corner {
+    text-align: center;
+    content: counter(page);
+  }
+  @top-left {
+    content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle);
+  }
+}
+/*right-pages-header-all-corner-page-number*/
+@page :right {
+  @top-right-corner {
+    text-align: center;
+    content: counter(page);
+  }
+  @top-right {
+    content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle);
+  }
+}
+/*header-colors-labels*/
+@page {
+  @top-left {
+    color: #03b585;
+  }
+  @top-center {
+    color: #03b585;
+  }
+  @top-right {
+    color: #03b585;
+  }
+}
+/*header-style-bold*/
+@page {
+  @top-left-corner {
+    font-weight: bold;
+  }
+  @top-left {
+    font-weight: bold;
+  }
+  @top-center {
+    font-weight: bold;
+  }
+  @top-right {
+    font-weight: bold;
+  }
+  @top-right-corner {
+    font-weight: bold;
+  }
+}
+/*page-size-a4*/
+@media print {
+  @page {
+    size: A4;
+  }
+}
+/*page-margin-0-25*/
+@media print {
+  @page {
+    margin: 0.25in;
+  }
+}
+/*pdf-index-groups-colors-labels-colors*/
+*[class~="index/groups"]:before,
+*[class~="index/groups"] *[class~="index/group"] *[class~="index/label"],
+*[class~="index/groups"] *[class~="index/link"] {
+  color: #03b585;
+}
+/*pdf-index-groups-styles-bold-underline*/
+*[class~="index/groups"]:before {
+  font-weight: bold;
+  border-bottom: 2px solid #0d0d0d;
+}
+/*pdf-index-groups-alignment-inline*/
+*[class~="index/formatted-value"],
+*[class~="index/refid"] {
+  display: inline;
+}
+/*wh-tree*/
+/*wh-tiles-themes-titles-and-link*/
+.wh_tile {
+  background-color: transparent;
+}
+.wh_tile_title {
+  text-align: center;
+  font-size: 1.5em;
+}
+.wh_tile_title a {
+  color: #044123;
+}
+.wh_tile_shortdesc {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #0d0d0d;
+}
+/*wh-tree-themes-titles-labels-colors*/
+.wh_main_page_toc {
+  border: none;
+  background-color: transparent;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header,
+.wh_main_page_toc > .wh_main_page_toc_entry,
+.wh_main_page_toc_accordion_entries {
+  border-bottom: #0d0d0d;
+  background-color: transparent;
+  text-align: left;
+}
+.wh_main_page_toc .wh_main_page_toc_accordion_header:hover,
+.wh_main_page_toc > .wh_main_page_toc_entry:hover {
+  background-color: rgba(13, 13, 13, 0.1);
+  color: #0d0d0d;
+}
+.wh_main_page_toc .topicref a,
+.wh_main_page_toc .topicref a:visited {
+  color: #0d0d0d;
+}
+.wh_main_page_toc .wh_toc_shortdesc {
+  color: #03b585;
+  font-weight: normal;
+}
+.wh_main_page_toc_accordion_header:before {
+  color: #0d0d0d;
+}
+/*wh-breadcrumb-colors-title-and-links-bg*/
+.wh_tools {
+  background-color: #e6fffa;
+}
+.wh_breadcrumb ol a {
+  color: #0d0d0d;
+  text-decoration: none;
+  font-weight: normal;
+}
+.wh_breadcrumb ol .active a {
+  font-weight: bold;
+  color: #044123;
+}
+/*wh-breadcrumb-separator-arrow*/
+.wh_breadcrumb li:not(:last-of-type):after {
+  content: ' > ';
+}
+/*wh-on-this-page-dashed*/
+.wh_topic_toc .section-item .section-title a {
+  color: #044123;
+  text-decoration: none;
+}
+.wh_topic_toc .wh_topic_label {
+  color: #0d0d0d;
+  padding: 5px;
+}
+.wh_topic_toc {
+  border-left: 2px dashed #03b585;
+}
+/*wh-publication-toc-dashed*/
+.wh_publication_toc {
+  background-color: transparent;
+}
+.wh_publication_toc .title a {
+  color: #044123;
+}
+.wh_publication_toc .active > .topicref a {
+  color: #0d0d0d;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 2px dashed #03b585;
+}
+/*wh-index-terms-colors-titles-labels-colors-with-bg*/
+.wh_index_terms span.wh_first_letter,
+.wh-letters li a,
+.wh_term_target {
+  color: #0d0d0d;
+}
+.wh-letters {
+  background-color: #e6fffa;
+}
+.wh_term span {
+  color: #03b585;
+}
+/*wh-index-terms-styles-titles-bold*/
+.wh-letters li a,
+.wh_first_letter {
+  font-weight: bold;
+}
+.wh_index_terms .wh_first_letter {
+  border-bottom: none;
+}
+/*wh-menu-page-colors-titles-color-no-bg*/
+.wh_header {
+  background-color: transparent;
+}
+.wh_top_menu > ul > li a,
+.wh_indexterms_link a::before {
+  color: #0d0d0d;
+}
+.wh_indexterms_link a span {
+  display: none;
+}
+.wh_top_menu ul li:hover {
+  background-color: #e6e6e6;
+}
+.wh_top_menu ul ul {
+  background-color: #e6e6e6;
+}
+.wh_top_menu ul ul li {
+  border-top-color: #fff;
+}
+.wh_top_menu ul ul li a:hover {
+  background: #d9d9d9;
+}
+#wh_menu_mobile_button {
+  background-color: #b3b3b3;
+}
+/*title-font-size-small*/
+.topictitle1,
+*[class~='toc/title'],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  font-size: 17pt;
+}
+.topictitle2 {
+  font-size: 14pt;
+}
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6 {
+  font-size: 11pt;
+}
+/*content-font-size-9-and-half*/
+body {
+  font-size: 9.5pt;
+}
+/*between-elements-small*/
+*[class~='topic/p'],
+*[class~='topic/table'],
+*[class~='topic/pre'],
+*[class~='topic/codeblock'],
+*[class~='topic/ph'],
+*[class~='codeph'],
+*[class~='topic/ul'],
+*[class~='topic/ol'] {
+  margin: 0.8em 0;
+}
+/*between-lines-medium*/
+*[class~='topic/topic'],
+*[class~='topic/body'],
+*[class~='topic/title'] {
+  line-height: 1.4;
+}
+/*titles-color-labels*/
+.topictitle1,
+.topictitle2,
+.topictitle3,
+.topictitle4,
+.topictitle5,
+.topictitle6,
+*[class~="toc/title"],
+*[class~="placeholder/figurelist"] > *[class~="topic/title"],
+*[class~="placeholder/tablelist"] > *[class~="topic/title"],
+*[class~="index/groups"]::before {
+  color: #03b585;
+}
+/*footnotes-style-square-brackets-default-marker*/
+@media print {
+  *[class~="topic/fn"]::footnote-call {
+    content: "[" counter(footnote) "]";
+  }
+}
+*[class~="topic/fn"]::footnote-call,
+*[class~="topic/fn"]::footnote-marker,
+*[class~="topic/fn-call"] {
+  font-size: 83%;
+  line-height: none;
+}
+*[class~="topic/fn-call"] > sup::before {
+  content: "[";
+}
+*[class~="topic/fn-call"] > sup::after {
+  content: "]";
+}
+/*footnotes-links-accent-colors*/
+*[class~="topic/fn"]::footnote-call,
+*[class~="topic/fn"]::footnote-marker,
+*[class~="topic/fn-call"] {
+  color: #044123;
+}
+*[class~="topic/fn-call"] > sup,
+*[class~="topic/fn"] sup {
+  color: #044123;
+}
+/*footnotes-separator-solid*/
+@media print {
+  @page {
+    @footnote {
+      content: leader(solid);
+    }
+  }
+}
+@media screen {
+  *[class~="topic/body"] + *[class~="topic/fn"] {
+    border-top: 1px solid black;
+  }
+}
+/*footnotes-separator-titles-accent-color*/
+@media print {
+  @page {
+    @footnote {
+      color: #0d0d0d;
+    }
+  }
+}
+@media screen {
+  *[class~="topic/body"] + *[class~="topic/fn"] {
+    border-top-color: #0d0d0d;
+  }
+}
+/*code-fonts-consolas*/
+*[class~='pr-d/codeblock'],
+*[class~='codeblock'],
+*[class~='pr-d/codeph'],
+*[class~='codeph'] {
+  font-family: 'Consolas', monospace;
+}
+/*code-block-theme-colors-github*/
+*[class~='codeblock'] {
+  color: #111111;
+  background-color: #FFFFFF;
+}
+*[class~='hl-keyword'] {
+  color: #000000;
+}
+*[class~='hl-string'] {
+  color: #D25252;
+}
+*[class~='hl-tag-doctype-comment'],
+*[class~='hl-comment'] {
+  color: #777777;
+}
+*[class~='hl-number'] {
+  color: #33AAAA;
+}
+/*table-style-classic-grid*/
+*[class~='topic/entry'],
+*[class~='topic/stentry'] {
+  border: 1px solid;
+}
+.stentry:last-child {
+  border-right: 1px solid;
+}
+.strow:last-child .stentry {
+  border-bottom: 1px solid;
+}
+/*table-colors-striped-reverse*/
+*[class~='topic/strow']:nth-child(odd),
+*[class~='topic/tbody'] *[class~='topic/row']:nth-child(odd) {
+  background-color: #ffffff;
+}
+/*unordered-list-bullet-disc*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"] {
+  list-style-type: disc;
+}
+/*unordered-list-bullet-color-labels*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  color: #03b585;
+}
+/*unordered-list-bullet-size-small*/
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ul ul"] > *[class="- topic/li li"]::before {
+  font-size: 0.9em;
+}
+/*ordered-list-counter-color-labels*/
+*[class="- topic/ol ol"] > *[class="- topic/li li"]::marker,
+*[class="- topic/ol ol"] > *[class="- topic/li li"]::before {
+  color: #03b585;
+}
+/*hazard-content-border*/
+*[class~="hazard-d/hazardstatement"] th,
+*[class~="hazard-d/hazardstatement"] td {
+  border: 0;
+}
+/*notes-layout-two-lines*/
+span.note__title {
+  display: block;
+}
+/*notes-style-box*/
+*[class~="topic/note"]:not([class~="hazard-d/hazardstatement"]) {
+  border-radius: 11px;
+}
+
