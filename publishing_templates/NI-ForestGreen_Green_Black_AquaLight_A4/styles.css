@@ -502,3 +502,34 @@ span.note__title {
   border-radius: 11px;
 }
 
+*[class ~= "topic/table"] {
+    page-break-inside:avoid;
+}
+/* settings to avoid page breaks in tables */
+
+*[class ~= "topic/ol"] {
+    page-break-inside:avoid;
+}
+/* settings to avoid page breaks in ordered list */
+
+*[class ~= "topic/ul"] {
+    page-break-inside:avoid;
+}
+/* settings to avoid page breaks in unordered list*/
+
+*[class ~= "task/steps"] {
+    page-break-inside:auto;
+}
+/* settings to allow steps to be slit over two continuous pages */
+
+*[class ~= "map/map"] > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] {
+	page-break-before:always;
+	page-break-avoid:always;
+} 
+/* settings to force page breaks before or after a topic */
+
+:root {
+    widows:5;
+    orphans:5;
+}
+/* settings to avoid widow and orphan paragraphs/list items at the bottom and top of a page. 5 means that a list or a paragraph that spans consecutive pages will have either zero or at least 4 lines on each of the pages. */
