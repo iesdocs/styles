@@ -325,6 +325,7 @@ figcaption {
 	display:block;
 	text-align: left;
 	font-family: 'Oxygen', sans-serif;
+	font-weight: bold
 	font-size: 9.5pt;	
 }
 /*figure title font size */
@@ -334,6 +335,7 @@ table > caption {
 	text-align: left;
 	font-family: 'Oxygen', sans-serif;
 	font-size: 9.5pt;
+	font-weight: bold
 }
 /*table title font size */
 
