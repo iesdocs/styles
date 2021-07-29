@@ -504,6 +504,9 @@ span.note__title {
 
 *[class ~= "topic/table"] {
     page-break-inside:avoid;
+	margin-left:auto;
+    margin-right:auto;
+    width: 50%;
 }
 /* settings to avoid page breaks in tables */
 
@@ -533,3 +536,122 @@ span.note__title {
     orphans:5;
 }
 /* settings to avoid widow and orphan paragraphs/list items at the bottom and top of a page. 5 means that a list or a paragraph that spans consecutive pages will have either zero or at least 4 lines on each of the pages. */
+
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='5'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='6'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='7'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='8'] {
+    max-width: 100%;
+    table-layout:auto;
+}
+
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']){
+      page: landscape-page;
+}
+/* rotate the entire topic that contains a big table of which the column number exceeds 5 (including 5). Page for such a topic will switch to landscape view. */
+
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='5'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='6'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='7'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='8'] {
+    page: landscape-page;
+    max-width: 100%;
+    page-break-before: avoid;
+}    
+/* rotate the table that contains more than 5 columns to landscape view. */
+
+*[class ~= "topic/table"] {
+  overflow-wrap: break-word;
+}
+/* settings to avoid table cell text from bleeding */
+
+*[class~="topic/table"][outputclass='auto_tbl'] > *[class~="topic/tgroup"] {
+    table-layout:auto !important;
+}
+/* enable automatic table layout, note that you have to specify @outputclass='auto_tbl' at the table element level in your topic file. */
+
+*[class ~= "topic/row"] > *[class ~= "topic/entry"][outputclass ~= "rotated"] {
+  width: 1em; /* This gives the table column its width. It is the height of the rotated elemnet - assuming it contains just one line. */
+  padding-top: 14em; /* Increase this until the entire vertical text fits into the cell. */
+}
+   
+*[outputclass ~= "rotated"] > * {
+        transform: rotate(-90deg) !important;
+        width:1em; /* This also gives the table column its width. */
+        height:1em; /* This is the effective width after rotation. */
+        border: 1pt solid red; /* Just for debug */
+        background-color:yellow; /* Just for debug */
+        hyphens:manual; /* Disable hyphenation, to force the text extend out of the small bounds - the parent rotated entry has enough padding to accomodate it. */
+        padding: 0;
+        margin: 0;
+}
+/* settings to enable the first column be used as table headers. Accordingly, @outputclass per <entry> should be specified as "rotated". For example:   
+	<row>
+      ...
+      <entry outputclass="rotated">
+            <p>Rotated</p>
+      </entry>
+      ...
+	</row>
+*/
+
+*[class~="task/choptionhd"],
+*[class~="task/choptionhd"],
+*[class~="task/chdeschd"],
+*[class~="task/choption"] {
+	background-color: #03B585;	
+	text-align: left;
+}
+
+*[class~="task/choicetable"] {
+	border: 1pt solid #E6FFFA;
+}
+
+*[class~="task/choicetable"] *[class~="task/chrow"],
+*[class~="task/choicetable"] *[class~="task/chhead"]{
+	border-bottom: 1pt solid #E6FFFA;
+} 
+
+*[class~="task/choicetable"] *[class~="topic/stentry"] {
+	border-bottom: none;
+	border-right: none;
+}
+/* settings to add lines to choice table */
+
+*[class ~= "topic/table"] *[class ~= "topic/title"]{
+    text-align:center;
+}
+/* set text in table cells to align to left automatically */
+
+/* Header background and foreground */
+*[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/thead"] > *[class ~= "topic/row"]  {
+    background-color: #E6FFFA;
+    color:white;
+}
+
+/* A default background for the entire table body */
+*[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/tbody"] {
+    background-color: #E6FFFA;
+}
+
+/* Color for the stripes */
+*[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/tbody"] > *[class ~= "topic/row"]:nth-child(odd) {
+    background-color: white;
+}
+
+/* Border for the cells */
+*[class ~= "topic/table"][outputclass ~= "stripes"] *[class ~= "topic/entry"]  {
+    border: 0D0D0D;
+}
+/* add stripes to table */
