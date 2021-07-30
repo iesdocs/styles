@@ -506,7 +506,8 @@ span.note__title {
     page-break-inside:avoid;
 	margin-left:auto;
     margin-right:auto;
-    width: 50%;
+    width:100%;
+	text-align:left;
 }
 /* settings to avoid page breaks in tables */
 
@@ -541,7 +542,7 @@ span.note__title {
 *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6'],
 *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7'],
 *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8'] {
-    max-width: 100%;
+    max-width:100%;
     table-layout:auto;
 }
 
@@ -630,9 +631,9 @@ span.note__title {
 /* settings to add lines to choice table */
 
 *[class ~= "topic/table"] *[class ~= "topic/title"]{
-    text-align:center;
+    text-align:left;
 }
-/* set text in table cells to align to left automatically */
+/* set table title to align to left automatically */
 
 /* Header background and foreground */
 *[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/thead"] > *[class ~= "topic/row"]  {
