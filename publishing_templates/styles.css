@@ -538,8 +538,8 @@ span.note__title {
 
 
 :root {
-    widows:5;
-    orphans:5;
+    widows:2;
+    orphans:2;
 }
 /* settings to avoid widow and orphan paragraphs/list items at the bottom and top of a page. 5 means that a list or a paragraph that spans consecutive pages will have either zero or at least 4 lines on each of the pages. */
 
