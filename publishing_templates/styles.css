@@ -175,7 +175,7 @@ body {
   background-color: transparent;
 }
 .wh_tile_title {
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
 }
 .wh_tile_title a {
@@ -184,7 +184,7 @@ body {
 .wh_tile_shortdesc {
   margin-top: 1em;
   margin-bottom: 0.5em;
-  text-align: center;
+  text-align: left;
   color: #0d0d0d;
 }
 /*wh-tree-themes-titles-labels-colors*/
@@ -622,16 +622,19 @@ span.note__title {
 
 *[class~="task/choicetable"] {
 	border: 1pt solid #E6FFFA;
+	text-align:left;
 }
 
 *[class~="task/choicetable"] *[class~="task/chrow"],
 *[class~="task/choicetable"] *[class~="task/chhead"]{
 	border-bottom: 1pt solid #E6FFFA;
+	text-align:left;
 } 
 
 *[class~="task/choicetable"] *[class~="topic/stentry"] {
 	border-bottom: none;
 	border-right: none;
+	text-align:left;
 }
 /* settings to add lines to choice table */
 
@@ -644,11 +647,13 @@ span.note__title {
 *[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/thead"] > *[class ~= "topic/row"]  {
     background-color: #E6FFFA;
     color:white;
+	text-align:left;
 }
 
 /* A default background for the entire table body */
 *[class ~= "topic/table"][outputclass ~= "stripes"] > *[class ~= "topic/tbody"] {
     background-color: #E6FFFA;
+	text-align:left;
 }
 
 /* Color for the stripes */
