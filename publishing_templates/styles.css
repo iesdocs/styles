@@ -508,6 +508,7 @@ span.note__title {
     margin-right:auto;
     width:100%;
 	text-align:left;
+	border:1pt solid;
 }
 /* settings to avoid page breaks in tables */
 
@@ -663,6 +664,6 @@ span.note__title {
 
 /* Border for the cells */
 *[class ~= "topic/table"][outputclass ~= "stripes"] *[class ~= "topic/entry"]  {
-    border: 0D0D0D;
+    border: 1pt solid;
 }
 /* add stripes to table */
