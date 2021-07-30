@@ -503,7 +503,7 @@ span.note__title {
 }
 
 *[class ~= "topic/table"] {
-    page-break-inside:avoid;
+    page-break-inside:auto;
 	margin-left:auto;
     margin-right:auto;
     width:100%;
@@ -512,12 +512,12 @@ span.note__title {
 /* settings to avoid page breaks in tables */
 
 *[class ~= "topic/ol"] {
-    page-break-inside:avoid;
+    page-break-inside:auto;
 }
 /* settings to avoid page breaks in ordered list */
 
 *[class ~= "topic/ul"] {
-    page-break-inside:avoid;
+    page-break-inside:auto;
 }
 /* settings to avoid page breaks in unordered list*/
 
@@ -573,7 +573,7 @@ span.note__title {
 *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8'] {
     page: landscape-page;
     max-width: 100%;
-    page-break-before: avoid;
+    page-break-before: auto;
 }    
 /* rotate the table that contains more than 5 columns to landscape view. */
 
@@ -596,7 +596,7 @@ span.note__title {
         transform: rotate(-90deg) !important;
         width:1em; /* This also gives the table column its width. */
         height:1em; /* This is the effective width after rotation. */
-        border: 1pt solid red; /* Just for debug */
+        border: 1pt solid; /* Just for debug */
         background-color:yellow; /* Just for debug */
         hyphens:manual; /* Disable hyphenation, to force the text extend out of the small bounds - the parent rotated entry has enough padding to accomodate it. */
         padding: 0;
