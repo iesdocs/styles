@@ -526,11 +526,16 @@ span.note__title {
 }
 /* settings to allow steps to be slit over two continuous pages */
 
-*[class ~= "map/map"] > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] {
-	page-break-before:always;
-	page-break-avoid:always;
-} 
-/* settings to force page breaks before or after a topic */
+
+		/*
+			*[class ~= "map/map"] > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] 
+			{
+				page-break-before:always;
+				page-break-avoid:always;
+			} 
+		*/
+		/* settings to force page breaks before or after a topic */
+
 
 :root {
     widows:5;
