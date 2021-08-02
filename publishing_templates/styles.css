@@ -352,6 +352,10 @@ table > caption {
     table-row-span:attr(rowspan);
 }
 
+*[outputclass ~= "no-hyphenation"] {
+	white-space: nowrap;
+}
+
 /*content-font-size-9-and-half*/
 body {
   font-size: 9.5pt;
@@ -602,7 +606,7 @@ span.note__title {
     hyphens: auto;
 }
 
-*[class~="topic/tgroup"] {
+*[class~="topic/table"][outputclass='auto_tbl'] > *[class~="topic/tgroup"] {
     table-layout:auto !important;
 }
 /* enable automatic table layout */

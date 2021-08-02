@@ -1,0 +1,20 @@
+/*@page front-page {
+    background-image: url("cover.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}*/
+
+/**[class ~= "front-page/front-page-title"] {
+    color: white;
+    font-size: 3em;
+    margin-top: 6.5cm;
+    padding-left: 7cm;
+}*/
+
+/**[class ~= "bookmap/booktitle"]::after {
+    display: block;
+    font-size: 22pt;
+    padding-top: 1cm;
+    content: "Last Rev. " oxy_xpath('//*[contains(@class, " bookmap/bookmeta ")]//*[contains(@class, " topic/revised ")]/@modified');
+}*/
