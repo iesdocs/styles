@@ -21,3 +21,4 @@
 4. Customized cc_config for LwDITA, relevant local path:
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\lw\resources for LwDITA
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\resources for DITA 1.3
+5. ditaval settings for templates
