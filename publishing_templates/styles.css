@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:regular,bold&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,italic,bold&display=swap');
-@import url("front-page.css");
+@import url("headers-footers.css");
+
+
 
 /* #
 @colors&{"titlesAccentColor":"#0d0d0d","labelsAccentColor":"#03b585","linksAccentColor":"#044123","backgroundAccentColor":"#e6fffa","isDefault":true}&colors@
@@ -28,8 +30,6 @@
 .topictitle6,
 *[class~='front-page/front-page-title'],
 *[class~="toc/title"],
-*[class~="placeholder/figurelist"] > *[class~="topic/title"],
-*[class~="placeholder/tablelist"] > *[class~="topic/title"],
 *[class~="index/groups"]::before {
   color: #0d0d0d;
 }
@@ -1250,4 +1250,26 @@ tr{
   direction:ltr;
 }
 } 
+
+ @page :left {
+        @top-left {
+            content:none;
+        }
+        @top-left-corner {
+            content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) " | " counter(page);
+            white-space: nowrap;	
+            text-align:left;
+        }
+    }
+
+@page :right{
+        @top-right {
+            content: none;
+        }
+        @top-right-corner {
+            content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) " | " counter(page);
+            white-space: nowrap;	
+            text-align:right;
+        }
+    }
 

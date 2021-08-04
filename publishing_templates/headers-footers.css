@@ -1,0 +1,133 @@
+
+
+@page chapter:first:left{
+    @top-left {
+        content: string(maptitle)
+    }
+}
+
+@page chapter:first:right{
+    @top-right {
+        content: string(maptitle)
+    }
+}
+
+@page :left {
+    /\*@top-left {
+        content: string(chaptertitle)
+    }*\/
+    @bottom-center {
+        content: "- " counter(page) " -";
+    }
+}
+
+@page :right{
+    /\*@top-right {
+        content: string(chaptertitle)
+    }*\/
+    @bottom-center {
+        content: "- " counter(page) " -";
+    }
+}
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"] {
+    string-set: chaptertitle " " counter(chapter) ". " content();
+}
+
+@page :left {
+	@top-left {
+		content: string(chaptertitle-no-prefix);
+	}
+	
+	@top-right {
+		content: counter(page);
+	}
+}
+/* page left header settings */
+	
+@page :right {
+	@top-right {
+		content: string(chaptertitle-no-prefix);
+	}
+	
+	@top-left {
+		content: counter(page);
+	}
+}
+/* page right header settings */		
+		
+@page {
+  @top-left {
+    color: @labels-accent-color;
+  }
+  
+  @top-center {
+    color: @labels-accent-color;
+  }
+  
+  @top-right {
+    color: @labels-accent-color;
+  }
+}
+/*  header color settings */
+
+@page {
+	@top-left-corner {
+    font-style: italic;
+  }
+
+  @top-left {
+    font-style: italic;
+  }
+  
+  @top-center {
+    font-style: italic;
+  }
+  
+  @top-right {
+    font-style: italic;
+  }
+  
+  @top-right-corner {
+    font-style: italic;
+  }
+}
+/* header style settings */	
+		
+@page :left {
+	@bottom-center {
+		content: string(maptitle);
+	}
+}
+		
+/* footer - left page settings */
+
+@page :right {
+	@bottom-center {
+		content: string(maptitle);
+	}
+}
+/* footer - right page settings */
+
+@page {
+	@bottom-left-corner {
+    font-weight: bold;
+  }
+
+  @bottom-left {
+    font-weight: bold;
+  }
+  
+  @bottom-center {
+    font-weight: bold;
+  }
+  
+  @bottom-right {
+    font-weight: bold;
+  }
+  
+  @bottom-right-corner {
+    font-weight: bold;
+  }
+}
+/* footer style settings */

@@ -21,6 +21,7 @@
 	<preview-image file="preview/logo.png"/>
 	<resources>
 		<css file="styles.css"/>
+			
 	</resources>
 	<parameters>
 		<parameter name="webhelp.show.main.page.toc" value="yes"/>
