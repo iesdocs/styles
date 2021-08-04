@@ -1,6 +1,10 @@
 # READ ME
 This repository is created to save style packages for PDF output and webhelp output. These styles are created through Oxygen Style Basket: https://styles.oxygenxml.com.  Packages are saved in https://github.com/iesdocs/styles/tree/main/publishing_templates.
 
+## Current workitems
+
+https://github.com/iesdocs/styles/blob/main/workitems.md 
+
 ## How to Customize Style with Oxygen 
 1. Go to https://styles.oxygenxml.com. 
 2. Configure each attribute.
