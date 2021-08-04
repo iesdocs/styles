@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Oxygen:regular,bold&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,italic,bold&display=swap');
 @import url("front-page.css");
-@import url("headers-footers.css");
 
-#
+/* #
 @colors&{"titlesAccentColor":"#0d0d0d","labelsAccentColor":"#03b585","linksAccentColor":"#044123","backgroundAccentColor":"#e6fffa","isDefault":true}&colors@
 @info@STYLES BASKET SELECTIONS METADATA@info@
 @name&styles_basket&name@
 @aspects&wh-tree,theme-fonts-oxygen-source-sans-pro,logo-favicon-selector,pdf-cover-title-size-small,right-pages-header-all-corner-page-number,left-pages-header-all-corner-page-number,pdf-index-groups-colors-labels-colors,pdf-index-groups-styles-bold-underline,pdf-index-groups-alignment-inline,wh-tiles-themes-titles-and-link,wh-tree-themes-titles-labels-colors,wh-breadcrumb-colors-title-and-links-bg,wh-breadcrumb-separator-arrow,wh-on-this-page-dashed,wh-publication-toc-dashed,wh-index-terms-colors-titles-labels-colors-with-bg,wh-index-terms-styles-titles-bold,wh-menu-page-colors-titles-color-no-bg,content-font-size-9-and-half,between-elements-small,between-lines-medium,footnotes-style-square-brackets-default-marker,footnotes-links-accent-colors,footnotes-separator-solid,footnotes-separator-titles-accent-color,code-fonts-consolas,code-block-theme-colors-github,unordered-list-bullet-disc,unordered-list-bullet-size-small,ordered-list-counter-color-labels,hazard-content-border,notes-style-box,header-style-bold,accent-colors-selector,unordered-list-bullet-color-labels,table-style-classic-grid,table-colors-striped-reverse,notes-layout-two-lines,pdf-cover-title-colors-labels,page-margin-0-25,page-size-a4,title-font-size-small,header-colors-labels,titles-color-labels,pdf-cover-selector&aspects@
 @info@WARNING: PLEASE DON'T MODIFY THIS FILE. MODIFICIATION CAN CAUSE UPLOADING ERRORS@info@
 #
+*/
 
 @media print {
   @page front-page {
