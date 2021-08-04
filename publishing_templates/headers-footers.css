@@ -1,22 +1,23 @@
-/*@page front-page {
+@page front-page {
     @bottom-left {
         font-size: 18pt;
         content: "Author: " oxy_xpath('//*[contains(@class, " bookmap/bookmeta ")]/*[contains(@class, " topic/author ")]/text()');
     }
-}*/
+}
 
-/*@page chapter:first:left{
+@page chapter:first:left{
     @top-left {
         content: string(maptitle)
     }
 }
+
 @page chapter:first:right{
     @top-right {
         content: string(maptitle)
     }
-}*/
+}
 
-/*@page :left {
+@page :left {
     /\*@top-left {
         content: string(chaptertitle)
     }*\/
@@ -24,6 +25,7 @@
         content: "- " counter(page) " -";
     }
 }
+
 @page :right{
     /\*@top-right {
         content: string(chaptertitle)
@@ -31,8 +33,8 @@
     @bottom-center {
         content: "- " counter(page) " -";
     }
-}*/
+}
 
-/**[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"] {
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"] {
     string-set: chaptertitle " " counter(chapter) ". " content();
-}*/
+}
