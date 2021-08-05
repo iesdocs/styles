@@ -3,7 +3,7 @@
 ## Bug fix
 
 1. invisible headers/footers though settings exist in styles.css and headers-footer.css;
-2. possible word bleeding in tables/simpletables;
+2. possible word bleeding in tables/simpletables; []
 3. sequence of toc: move the list of figures and list of tables to the end of toc;
 
 ## features
