@@ -145,16 +145,17 @@ body {
     font-weight: bold;
   }
 }
-/*page-size-a4*/
+/*page-size-a4 landscape*/
 @media print {
-  @page {
-    size: A4;
-  }
+	@page {
+	  size: A4 landscape;
+	}
 }
-/*page-margin-0-25*/
+		
+/*page-margin-0.295*/
 @media print {
   @page {
-    margin: 0.25in;
+    margin: 0.295in;
   }
 }
 /*pdf-index-groups-colors-labels-colors*/
