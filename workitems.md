@@ -14,6 +14,7 @@
   - relevant local paths in root folder:
     - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\lw\css\img for LwDITA
     - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\css\img for DITA, transformation scenario = HTML5 & CSS
+    - p4v path: //Solutions/Documentation/Library/Templates/Art/Rebrand 
 
 2. NI-styled side bar for left and right pages
 3. Customized Font. Relevant local path:
