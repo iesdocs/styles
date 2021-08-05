@@ -13,18 +13,18 @@
 }
 
 @page :left {
-    /\*@top-left {
+    *@top-left {
         content: string(chaptertitle)
-    }*\/
+    }*
     @bottom-center {
         content: "- " counter(page) " -";
     }
 }
 
 @page :right{
-    /\*@top-right {
+    *@top-right {
         content: string(chaptertitle)
-    }*\/
+    }*
     @bottom-center {
         content: "- " counter(page) " -";
     }
