@@ -29,6 +29,14 @@ In Oxygen XML Editor, you need to select a transformation scenario before publis
 ## How to Generate PDF Using a Custom Transformation Scenario
 ![image](https://user-images.githubusercontent.com/49274541/126761226-9f522bc0-dfba-41cc-9ce3-6caca82c06ff.png)
 
+## Size
+
+A4 Landscape: 3508 X 2480
+
+## Margin
+ 
+0.295in
+
 ## Color
 
 ### Forest Green
