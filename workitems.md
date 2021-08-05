@@ -3,15 +3,15 @@
 ## Bug fix
 
 - [ ] invisible headers/footers though settings exist in styles.css and headers-footer.css;
-- [ ] possible word bleeding in tables/simpletables; 
+- [x] possible word bleeding in tables/simpletables; 
 - [ ] sequence of toc: move the list of figures and list of tables to the end of toc;
 
 ## features
 
 - [ ] customized icons for:
-  - [ ] note and its variants by attribute value;
-  - [ ] hazardstatement and its variants by attribute value;
-  - [ ] relevant local paths in root folder:
+  - [x] note and its variants by attribute value;
+  - [x] hazardstatement and its variants by attribute value;
+  - [x] relevant local paths in root folder:
    - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\lw\css\img for LwDITA
    - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\css\img for DITA, transformation scenario = HTML5 & CSS
    - p4v path: //Solutions/Documentation/Library/Templates/Art/Rebrand 
