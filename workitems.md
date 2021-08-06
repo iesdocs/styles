@@ -4,7 +4,8 @@
 
 - [ ] invisible headers/footers though settings exist in styles.css and headers-footer.css;
 - [x] possible word bleeding in tables/simpletables; 
-- [ ] sequence of toc: move the list of figures and list of tables to the end of toc;
+- [x] sequence of toc: move the list of figures and list of tables to the end of toc;
+- [x] abnormal hyphenation in tables
 
 ## features
 
@@ -22,7 +23,7 @@
 - [ ] Customized cc_config for LwDITA, relevant local path:
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\lw\resources for LwDITA
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\resources for DITA 1.3
-- [ ] ditaval settings for templates:
+- [x] ditaval settings for templates:
     + project
     + product
     + customer
