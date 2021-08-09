@@ -1274,3 +1274,49 @@ tr{
         }
     }
 
+*[class ~= "topic/image"] {
+  ...
+        /* The US-letter page size minus page margins. See p-page-size.css for the current page size. */
+    max-width: auto;         
+ }
+ 
+ *[outputclass ~= "single"] {
+    list-style-type:circle !important;
+    margin-left:2em;
+}
+/*turn 1-step steplist into bullet item, note that outputclass per step should be set as single */
+
+@page :left {
+        @top-left {
+            content:none;
+        }
+        @top-left-corner {
+            content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) " | " counter(page);
+            white-space: nowrap;	
+            text-align:left;
+        }
+    }
+
+@page :right{
+        @top-right {
+            content: none;
+        }
+        @top-right-corner {
+            content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) " | " counter(page);
+            white-space: nowrap;	
+            text-align:right;
+        }
+    }
+	
+    
+@page :first:left {
+      @top-left-corner {
+        background-image: none;
+      }
+}
+
+@page :first:right {
+  @top-right-corner {
+    background-image: none;
+  }
+}

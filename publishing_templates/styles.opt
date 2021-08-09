@@ -7,6 +7,7 @@
 	<preview-image file="preview/logo.png"/>
 	<resources>
 		<css file="styles.css"/>
+		<css file="headers-footers.css"/>	
 	<fileset>
 		<include name="resources/**/*"/>
 	</fileset>
@@ -21,12 +22,8 @@
 	<preview-image file="preview/logo.png"/>
 	<resources>
 		<css file="styles.css"/>
-			
+		<css file="headers-footers.css"/>	
+		
 	</resources>
-	<parameters>
-		<parameter name="webhelp.show.main.page.toc" value="yes"/>
-		<parameter name="webhelp.show.main.page.tiles" value="no"/>
-	</parameters>
-</pdf>
-
+	</pdf>
 </publishing-template>
