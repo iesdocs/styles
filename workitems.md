@@ -18,7 +18,7 @@
    - p4v path: //Solutions/Documentation/Library/Templates/Art/Rebrand 
 
 - [ ] NI-styled side bar for left and right pages
-- [ ] Customized Font. Relevant local path:
+- [x] Customized Font. Relevant local path:
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\css\fonts for DITA, transformation scenario = HTML5 & CSS
 - [ ] Customized cc_config for LwDITA, relevant local path:
   - C:\Program Files\Oxygen XML Editor 23\frameworks\dita\lw\resources for LwDITA
