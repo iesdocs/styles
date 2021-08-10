@@ -29,3 +29,20 @@
     + customer
     + year
     + module
+
+## Sample Project
+
+- A sample project created in oxygen;
+- It should contain at least 2 conditional texts in current STS templates;
+- The conditional texts should be converted to ditavals;
+- Fill the metadata for maps, topics.
+- Keydef and keyref should be used for certain frequently used phrases;
+- Conref should be used for content including copyright, legal notice, compliance chapter;
+
+Structure:
+
+Bookmap
+  - Frontmatter
+  - Chapters
+  - Glossary
+  - Relation tables
