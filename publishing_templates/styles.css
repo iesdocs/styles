@@ -1296,6 +1296,7 @@ tr{
             text-align:left;
         }
     }
+/* header settings */
 
 @page :right{
         @top-right {
@@ -1307,7 +1308,7 @@ tr{
             text-align:right;
         }
     }
-	
+/* header settings */	
     
 @page :first:left {
       @top-left-corner {
@@ -1320,3 +1321,4 @@ tr{
     background-image: none;
   }
 }
+/* header settings */
