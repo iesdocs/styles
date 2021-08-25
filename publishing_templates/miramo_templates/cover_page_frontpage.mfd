@@ -2470,8 +2470,8 @@
 	 objId="351"><TextFrame type="foreground" columns="1" columnGap="6mm" left="20mm" top="30mm" width="257mm" height="160mm" angle="0.00" penWidth="1.00pt" penStyle="none" penColor="none" penTint="100.00" penOpacity="100" fillColor="none" fillTint="100.00" fillOpacity="100" maxPgfPad="0.00pt" maxLinePad="0.00pt" fillNum="15" runAround="N" alignBaselines="N" maxCharHeight="0.00pt" autoConnect="Y" baselineSpace="0.00pt" objId="352"/><TextFrame type="background" left="20mm" top="15mm" width="257mm" height="10mm" penWidth="0pt" penStyle="solid" penColor="none" penTint="100" penOpacity="100" fillColor="none" fillTint="100" fillOpacity="100" objId="353" preserveSpaces="Y"><P paraDef="Header" objId="354">This page intentionally left blank</P></TextFrame></PageDef>
 <ParaDef
 	 paraDef="Footer"
-	 fontFamily="Source Sans Pro Semibold"
-	 fontWeight="SemiBold"
+	 fontFamily="Source Sans Pro"
+	 fontWeight="Bold"
 	 fontAngle="Regular"
 	 textSize="20.000000pt"
 	 textColor="NI-Green"
